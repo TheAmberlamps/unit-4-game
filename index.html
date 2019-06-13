@@ -18,31 +18,31 @@
 
         <!-- Game Title. -->
 
-        <h1>Crystal Collector!</h1>
+        <h1>Crystal Collector!</h1><br>
 
         <!-- Large field of text, illustrating the rules of the game and how to play. -->
 
-        <div id="bigText"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, veniam fugit dolorem nemo, cum dignissimos tenetur ipsam fuga ipsum, quae praesentium? Dignissimos doloribus adipisci maiores quidem possimus autem sit expedita?</p><br><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, inventore itaque molestias cupiditate quos suscipit enim repellat nulla, doloribus at officiis, maxime eius minus? Saepe officia placeat similique repellat consectetur.</p></div>
+        <div id="bigText"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, veniam fugit dolorem nemo, cum dignissimos tenetur ipsam fuga ipsum, quae praesentium? Dignissimos doloribus adipisci maiores quidem possimus autem sit expedita?</p><br><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, inventore itaque molestias cupiditate quos suscipit enim repellat nulla, doloribus at officiis, maxime eius minus? Saepe officia placeat similique repellat consectetur.</p></div><br>
 
         <!-- The number that the user is required to arrive at to win the game, or alternatively the number that when exceeded causes you to lose the game. -->
 
-        <div id="requiredNum"></div>
+        <p>Required Number: <span id="requiredNum"></span></p><br>
 
         <!-- Used to display wins and losses -->
 
-        <div id="gameCounter"></div>
+        <p>Games Won: <span id="gamesWon"></span></p><br>
+
+        <p>Games Lost: <span id="gamesLost"></span></p><br>
 
         <!-- 4 buttons, represented by pictures, all possessing a random value between 1-12 -->
 
         <!-- Modified the first div quickly to use it to run tests. Replace this and the others with a single image for the purpose of checking that they return what you want them to. -->
 
-        <div class="userChoice"><h2>HIT ME UP</h2></div> <div class="userChoice"></div> <div class="userChoice"></div> <div class="userChoice"></div>
+        <button id="userChoice1"><h2>HIT ME UP</h2> </button> <button id="userChoice2"><h2>ME TOO</h2></button> <button id="userChoice3"><h2>AND ME</h2></button> <button id="userChoice4"><h2>AND ME AS WELL</h2></button>
  
         <!-- Displays the combined value of all buttons pressed so far. -->
         
-        <p>Your total score is:</p>
-
-        <div id="currentScore"></div>
+        <p>Your total score is: <span id="currentScore"></span></p>
 
     </div>
     
