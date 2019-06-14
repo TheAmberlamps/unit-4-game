@@ -1,0 +1,39 @@
+#gameWrapper {
+    max-width: 960px;
+
+}
+
+#bigText {
+    background-color: salmon;
+}
+
+p {
+    color: green;
+}
+
+h1 {
+    background-color: orange;
+    color:white;
+}
+
+#requiredNum {
+    background-color: green;
+    color: black;
+}
+
+#gamesWon {
+    color:black;
+}
+
+#gamesLost {
+    color:black;
+}
+
+#winLose {
+    background-color:teal;
+    color:black;
+}
+
+#currentScore {
+    background-color:;
+}

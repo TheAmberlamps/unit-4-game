@@ -9,7 +9,7 @@
     <title>Crystal Collector</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-<body>
+<body background="assets/images/topography.png">
     
     <script src="assets/javascript/game.js"></script>
     <!-- Wrapper that holds the entire game. -->
@@ -18,32 +18,76 @@
 
         <!-- Game Title. -->
 
-        <h1>Crystal Collector!</h1><br>
+        <h1>Crystal Collector!</h1>
+        
+        <br>
 
         <!-- Large field of text, illustrating the rules of the game and how to play. -->
 
-        <div id="bigText"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, veniam fugit dolorem nemo, cum dignissimos tenetur ipsam fuga ipsum, quae praesentium? Dignissimos doloribus adipisci maiores quidem possimus autem sit expedita?</p><br><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, inventore itaque molestias cupiditate quos suscipit enim repellat nulla, doloribus at officiis, maxime eius minus? Saepe officia placeat similique repellat consectetur.</p></div><br>
+        <div id="bigText"><p>You will be given a random number at the start of the game.</p>
+            
+        <br>
+            
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+    
+        <br>
+
+        <p>You win the game by matching your total score to the random number, and you lose the game if your total score goes above it.</p>
+
+        <br>
+
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+
+        <br>
+
+        <p>Each time the game starts, the random number and the value of the crystals will be changed.</p>
+
+        </div>
+        
+        <br>
 
         <!-- The number that the user is required to arrive at to win the game, or alternatively the number that when exceeded causes you to lose the game. -->
 
-        <p>Required Number: <span id="requiredNum"></span></p><br>
+        <p>Required Number: <span id="requiredNum"></span></p>
+        
+        <br>
 
         <!-- Used to display wins and losses -->
 
-        <p>Games Won: <span id="gamesWon"></span></p><br>
+        <div id="winLose">
 
-        <p>Games Lost: <span id="gamesLost"></span></p><br>
+        <p>Games Won: <span id="gamesWon"></span></p>
+        
+        <br>
+
+        <p>Games Lost: <span id="gamesLost"></span></p>
+
+        </div>
+        
+        <br>
 
         <!-- 4 buttons, represented by pictures, all possessing a random value between 1-12 -->
 
         <!-- Modified the first div quickly to use it to run tests. Replace this and the others with a single image for the purpose of checking that they return what you want them to. -->
 
-        <button id="userChoice1"><h2>HIT ME UP</h2> </button> <button id="userChoice2"><h2>ME TOO</h2></button> <button id="userChoice3"><h2>AND ME</h2></button> <button id="userChoice4"><h2>AND ME AS WELL</h2></button>
+        <button class="crystalBut" id="userChoice1"><img src="assets/images/Crystal.jpg" width=100px height=100px/></button>
+        
+        <button class="crystalBut" id="userChoice2"><img src="assets/images/Green-Calcite-2.jpg" width=100px height=100px/></button>
+        
+        <button class="crystalBut" id="userChoice3"><img src="assets/images/crystalblue.jpg" width=100px height=100px/></button> 
+        
+        <button class="crystalBut" id="userChoice4"><img src="assets/images/red crystal.jpg" width=100px height=100px/></button>
+        
+        <br><br>
  
         <!-- Displays the combined value of all buttons pressed so far. -->
         
-        <p>Your total score is: <span id="currentScore"></span></p>
+        <p>Your total score is:</p>
 
+        <br>
+
+        <span id="currentScore"></span>
+        
     </div>
     
 </body>
