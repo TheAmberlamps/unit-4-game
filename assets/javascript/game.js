@@ -79,27 +79,27 @@ $(document).ready(function () {
             alert("You win!");
             wins++;
             winDisp.textContent = wins;
-            console.log("Win")
-            console.log("current number", currentNum);
+            // console.log("Win")
+            // console.log("current number", currentNum);
             currentNum = 0;
-            console.log("updated current number", currentNum);
+            // console.log("updated current number", currentNum);
             currentDisp.textContent = currentNum;
-            console.log("needednumber", neededNum);
+            // console.log("needednumber", neededNum);
             neededNum = Math.floor(Math.random() * (103 - 1) + 18);
-            console.log("updated needed number", neededNum);
+            // console.log("updated needed number", neededNum);
             needDisp.textContent = neededNum;
         } else if (currentNum > neededNum) {
             alert("You lose!");
             losses++;
             lossDisp.textContent = losses;
-            console.log("Loss");
+            // console.log("Loss");
             currentNum = 0;
             currentDisp.textContent = currentNum;
             neededNum = Math.floor(Math.random() * (103 - 1) + 18);
             needDisp.textContent = neededNum;
         }
         else {
-            console.log("Yep, working");
+            // console.log("Yep, working");
         }
 
     });
