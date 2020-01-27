@@ -12,10 +12,7 @@ the game it resets with new random values.
 
 The big hump to get over here was getting the numbers I needed
 to be generated within a certain range, i.e. not larger than 125,
-but not lower than 25. There's actually still a strange bug in my
-code that occasionally returns a smaller than desired required
-number, I'll have to review it at a later date and try to iron it
-out.
+but not lower than 25.
 
 Generating new values every game was a cinch though, I simply
 stored the individual math.random functions in variables and
